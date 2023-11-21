@@ -9,7 +9,12 @@
 - 로컬 Repository : bash 에서 **git init**
 - 원격 연결 : bash **git remote...** 복사 붙이기 
 
-- 현재(.) 폴더에 있는 파일 전부 압축 : **git add .** 
-- **git commit -m "java 프로젝트 시작"**
-- **git push -u origin master**
+- 로컬파일, 폴더 압축하여 저장 : **git add .** 
+- commit 설정 : **git commit -m "자바 시작"**
+- push(upload) : **git push -u origin master**
 - **git push**
+
+#### 파일변경, 추가 한 후 Repository push 하기
+- 압축하기 : **git add .**
+- commit(왜 commit 했는가?) : **git commit -m "hello 2 프로젝트 작성"
+- push : **git push**
