@@ -12,9 +12,9 @@
 - 로컬파일, 폴더 압축하여 저장 : **git add .** 
 - commit 설정 : **git commit -m "자바 시작"**
 - push(upload) : **git push -u origin master**
-- **git push**
 
-#### 파일변경, 추가 한 후 Repository push 하기
+
+#### 파일변경, 추가 한 후 Repository push 하기 [업로드 할 때 마다 3가지 반복하기]
 - 압축하기 : **git add .**
 - commit(왜 commit 했는가?) : **git commit -m "hello 2 프로젝트 작성"
 - push : **git push**
