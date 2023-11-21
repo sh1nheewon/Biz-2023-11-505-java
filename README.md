@@ -8,3 +8,8 @@
 - 원격 Repository : **Biz-2023-11-505-java**
 - 로컬 Repository : bash 에서 **git init**
 - 원격 연결 : bash **git remote...** 복사 붙이기 
+
+- 현재(.) 폴더에 있는 파일 전부 압축 : **git add .** 
+- **git commit -m "java 프로젝트 시작"**
+- **git push -u origin master**
+- **git push**
