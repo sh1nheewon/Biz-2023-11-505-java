@@ -21,8 +21,14 @@ public class AlgC {
 		if(bYes) {
 			System.out.println("짝수");  // 조건(선택) 명령문
 			
+			
 		}
 		
+		if(num1 % 2 ==0) {
+			
+			System.out.println("짝수");
+			
+		}
 		
 		
 	}
