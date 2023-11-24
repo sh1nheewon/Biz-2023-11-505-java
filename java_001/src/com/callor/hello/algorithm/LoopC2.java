@@ -1,6 +1,6 @@
 package com.callor.hello.algorithm;
 
-public class LoopC {
+public class LoopC2 {
 	public static void main(String[] args) {
 		int count = 0;
 		for(int index = 0; index < 100 ; index++) {
@@ -13,9 +13,14 @@ public class LoopC {
 				count = 0;
 			}
 			// 10개의 별을 출력한 후 줄바꿈(Enter)을 해 주면 된다. 
-			if(index % 10 == 9) { 
-				 System.out.println();	
-			}
-		}
+				
+			System.out.println("==============");
+				for(int index1 = 0; index1 < 100; index1++) {
+					System.out.print("* ");
+					if ((index1 + 1) % 10 == 0) {
+						System.out.println();
+					}
+		} 
 	}
+}
 }
