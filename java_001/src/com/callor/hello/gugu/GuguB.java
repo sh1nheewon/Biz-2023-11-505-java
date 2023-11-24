@@ -22,6 +22,7 @@ public class GuguB {
 			System.out.print(index);
 			System.out.print(" = ");
 			System.out.println(num * index);
+			
 		}
 	}
 }
