@@ -9,8 +9,9 @@ public class PrimeGA {
 				if (num % index == 0) {
 					break;
 				}
-			}
+			}if(index >= num) {
 			System.out.printf("%d MOD %d = %d\n", num , index , num % index);
+		}
 		}
 	}
 } 
