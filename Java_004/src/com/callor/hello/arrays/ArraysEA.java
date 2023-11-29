@@ -51,16 +51,13 @@ public class ArraysEA {
 			System.out.printf("%5.2f\n", evgs[i]);
 			
 		}
-		int sumSum = 0;
-		sumSum = sumKors + sumEngs + sumMaths;
 		
-		float evgKors = 0;
-		float evgEngs = 0;
-		float evgMaths = 0;
+		int sumSum = sumKors + sumEngs + sumMaths;
 		
-		evgKors = (float)sumKors / 10 ;
-		evgEngs = (float)sumEngs / 10 ;
-		evgMaths = (float)sumMaths / 10 ; 
+		
+		float evgKors = (float)sumKors / STUDENT_LENGTH ;
+		float evgEngs = (float)sumEngs / STUDENT_LENGTH ;
+		float evgMaths = (float)sumMaths / STUDENT_LENGTH ; 
 		
 		float evgEvg = (evgKors + evgEngs + evgMaths) / 3;
 		
