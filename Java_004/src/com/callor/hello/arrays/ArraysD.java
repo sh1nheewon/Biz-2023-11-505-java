@@ -37,8 +37,8 @@ public class ArraysD {
 		System.out.println("-".repeat(50));
 		
 		for(int i = 0 ; i < STUDENT_LENGTH ; i++ ){
-			sum = scoreKors[i] + scoreEng[i] + scoreMath[i];
 			evg = (float)sum / 3;			
+			sum = scoreKors[i] + scoreEng[i] + scoreMath[i];
 			System.out.printf("%2d	 %2d	%2d	%2d	%.2f\n", scoreKors[i] , scoreEng[i], scoreMath[i], sum, evg) ;
 		}
 		System.out.println("=".repeat(50));
