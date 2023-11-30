@@ -8,7 +8,7 @@ public class InputG {
 		int num = 0;
 
 		while (true) {
-			System.out.print("정수 (종료:QUIT) >>");
+			System.out.print("정수 (종료:QUIT) >> ");
 			String str = scan.nextLine();
 			if (str.equals("QUIT")) {
 				break;
@@ -26,17 +26,26 @@ public class InputG {
 				System.out.println("입력한 값 : " + num);
 				continue;
 			}
-			
-			for(int i = 1 ; i < num ; i ++) {
-				if(num % i == 0 ) {
-					
-				}
-				System.out.println(num + "는 소수가 아님");
-				
-				
+
+			boolean isPrime = isPrime(num);
+			if (isPrime) {
+				System.out.println(num + " 는 소수");
+			} else {
+				System.out.println(num + " 는 소수가 아님");
+
 			}
 		}
+	}
 
+	public static boolean isPrime(int num) {
+		int index = 0;
+
+		for (index = 2; index < num; index++) {
+			if (num % index == 0) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 }
