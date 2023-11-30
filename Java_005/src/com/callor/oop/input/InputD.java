@@ -32,7 +32,7 @@ public class InputD {
 //				Exception 을 e 에 저장하여 console 에 출력. (e.prinrStackTrace.)
 //				e.printStackTrace();
 				System.out.println("정수값을 정확히 입력해야 합니다.");
-				continue;
+				continue; // 명령을 끝내고 다시 while 로 감
 			}
 			System.out.println("입력한 값 : " + str1);
 			break;
