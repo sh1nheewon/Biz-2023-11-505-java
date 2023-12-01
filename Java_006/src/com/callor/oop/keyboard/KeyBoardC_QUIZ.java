@@ -53,7 +53,7 @@ public class KeyBoardC_QUIZ {
 				if (str.equals("재시작")) {
 					return;
 				}else {
-					break;
+					continue;
 				}
 			}
 		} // while end
