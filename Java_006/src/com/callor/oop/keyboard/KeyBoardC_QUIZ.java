@@ -15,11 +15,10 @@ public class KeyBoardC_QUIZ {
 		System.out.println("=".repeat(50));
 
 		while (true) {
+			System.out.println("1~50 까지의 숫자 중 황금열쇠를 입력하세요");
 			for (i = 1; i <= 5; i++) {
-				System.out.println("1~50 까지의 숫자 중 황금열쇠를 입력하세요");
 				System.out.print("황금열쇠 >> ");
 				String str = scan.nextLine();
-
 				try {
 					num = Integer.valueOf(str);
 				} catch (Exception e) {
@@ -31,13 +30,13 @@ public class KeyBoardC_QUIZ {
 					System.out.println("1~50 범위의 정수를 입력하세요");
 					continue;
 				}
-
 				if (i >= 5) {
 					System.out.printf("%d 회 시도. 황금열쇠 찾기에 실패했습니다. 정답 : %d\n", i, rndNum);
 					System.out.println("다시 실행하기는 '재시작' 입력");
 					System.out.println("게임 종료는 '종료' 입력");
 					System.out.print("입력 >> ");
-					continue;
+					str = scan.nextLine();
+					break;	
 				}
 				if (rndNum == num) {
 					System.out.printf("참 잘했어요 :  %d  (%d 번의 입력으로 정답 맞춤)\n", num, i);
@@ -51,15 +50,13 @@ public class KeyBoardC_QUIZ {
 					System.out.println("다시 한번 시도해 보세요");
 					continue;
 				}
-
-				while (true) {
-					str = scan.nextLine();
-					if (str.equals("재시작")) {
-					}
+				if (str.equals("재시작")) {
 					return;
+				}else {
+					break;
 				}
 			}
-
 		} // while end
 	} // main end
 }
+//	if (str.equals("재시작")) 
