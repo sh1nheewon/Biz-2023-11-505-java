@@ -8,7 +8,7 @@ public class InputF {
 		int num = 2;
 		Scanner scan = new Scanner(System.in);
 		
-		while (num) {
+		while (true) {
 			System.out.print("정수 (QUIT : 끝내기) >> ");
 			String str1 = scan.nextLine();
 			System.out.println(str1 == "Quit");
