@@ -2,19 +2,20 @@ package com.callor.oop.keyboard;
 
 import java.util.Scanner;
 
-public class KeyBoardC_QUIZ {
+public class KeyBoardC_QUIZ3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
 		int i = 0;
 		int num = 0;
-		int rndNum = (int) (Math.random() * 50) + 1;
-
-		System.out.println("=".repeat(50));
-		System.out.println("뤼팡의 황금열쇠를 찾아라");
-		System.out.println("=".repeat(50));
 
 		while (true) {
+			int rndNum = (int) (Math.random() * 10) + 1;
+
+			System.out.println("=".repeat(50));
+			System.out.println("뤼팡의 황금열쇠를 찾아라");
+			System.out.println("=".repeat(50));
+
 			System.out.println("1~50 까지의 숫자 중 황금열쇠를 입력하세요");
 			for (i = 1; i <= 5; i++) {
 				System.out.print("황금열쇠 >> ");
@@ -30,15 +31,11 @@ public class KeyBoardC_QUIZ {
 					System.out.println("1~50 범위의 정수를 입력하세요");
 					continue;
 				}
-				if (i >= 5) {
+
+				if (i == 5 && rndNum != num) {
 					System.out.printf("%d 회 시도. 황금열쇠 찾기에 실패했습니다. 정답 : %d\n", i, rndNum);
-					System.out.println("다시 실행하기는 '재시작' 입력");
-					System.out.println("게임 종료는 '종료' 입력");
-					System.out.print("입력 >> ");
-					str = scan.nextLine();
 					break;
-				}
-				if (rndNum == num) {
+				} else if (rndNum == num) {
 					System.out.printf("참 잘했어요 :  %d  (%d 번의 입력으로 정답 맞춤)\n", num, i);
 					break;
 				} else if (rndNum < num) {
@@ -50,13 +47,25 @@ public class KeyBoardC_QUIZ {
 					System.out.println("다시 한번 시도해 보세요");
 					continue;
 				}
-				if (str.equals("재시작")) {
+			}
+			System.out.println("다시 실행하기는 '재시작' 입력");
+			System.out.println("게임 종료는 '종료' 입력");
+			while (true) {
+				System.out.print("입력 >> ");
+				String ans = scan.nextLine();
+				if (ans.equals("재시작")) {
+					break;
+				} else if (ans.equals("종료")) {
 					return;
-				} else {
+				} else if (!ans.equals("재시작") && !ans.equals("종료")) {
+					System.out.println("재시작이나 종료를 입력하세요");
 					continue;
 				}
 			}
-		} // while end
+
+		} // while1 end
+
 	} // main end
 }
-//	if (str.equals("재시작")) 
+
+// if(str.equals("재시작"))
