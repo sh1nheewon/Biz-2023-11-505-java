@@ -23,7 +23,9 @@ public class ScoreC {
 			System.out.println(scores[i].scoreKor);
 			System.out.println(scores[i].scoreEng);
 			System.out.println(scores[i].scoreMath);
-			
 		}
+		
+		// 배열에 저장된 점수 화면에 출력하기
+		
 	}
 }
