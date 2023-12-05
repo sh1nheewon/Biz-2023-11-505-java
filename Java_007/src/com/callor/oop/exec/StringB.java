@@ -8,7 +8,7 @@ public class StringB {
 		
 		
 		for(int i = 0 ; i < result.length ; i++) {
-			result[i] = Integer.valueOf();	
+			
 			
 		}
 		

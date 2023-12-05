@@ -26,6 +26,7 @@ public class ArraysB {
 		}
 
 		int[] nums2 = new int[6];
+		
 		for (int i = 0; i < nums2.length; i++) {
 			nums2[i] = nums[i];
 		}
