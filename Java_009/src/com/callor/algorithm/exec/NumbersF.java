@@ -6,7 +6,7 @@ import com.callor.algorithm.service.NumberService;
 import com.callor.algorithm.utils.Line;
 
 public class NumbersF {
-	
+
 	public static void main(String[] args) {
 		NumberService numService = new NumberService();
 		Scanner scan = new Scanner(System.in);

@@ -4,7 +4,7 @@ import com.callor.algorithm.service.NumberService;
 import com.callor.algorithm.utils.Line;
 
 public class NumbersFA {
-	
+
 	public static void main(String[] args) {
 		NumberService numService = new NumberService();
 		Line.dLine(50);
