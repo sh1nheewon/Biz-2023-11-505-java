@@ -12,7 +12,9 @@ public class NumbersH {
 
 		int scoreSum = score1 + score2 + score3;
 		int scoreAvg = scoreSum / 3;
-
+		
+		System.out.printf("평균 : %d점\n",scoreAvg);
+		
 		if (scoreAvg >= 60) System.out.println("합격입니다");			
 		else System.out.println("낙제입니다");			
 		
