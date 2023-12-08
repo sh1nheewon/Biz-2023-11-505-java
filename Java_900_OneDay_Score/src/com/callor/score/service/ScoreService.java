@@ -60,6 +60,7 @@ public class ScoreService {
 		float musicAvg = 0;
 		float avgAvg = 0;
 		
+		
 		Line.dLine(80);
 		System.out.println("* 한울 고교 새별 반 성적 리스트 *");
 		Line.dLine(80);
