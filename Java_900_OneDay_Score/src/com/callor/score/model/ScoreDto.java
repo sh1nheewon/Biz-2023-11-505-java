@@ -14,9 +14,13 @@ public class ScoreDto {
 	public int art;
 	
 	
+	
+	
 	private int total;
 	
+	
 	private float avg;
+	
 	
 	
 	
@@ -27,16 +31,21 @@ public class ScoreDto {
 		total += math;
 		total += music;
 		total += art;
-		
-		
+			
 		return total;
 	}
+	
+	
+	
 	public float getAvg() {
 		getTotal();
-		avg = (float)total / 5.0f;
+		avg = (float)total / 5.2f;
 		return avg;
 	}
 	
-
 	
+	
+	
+	
+
 }

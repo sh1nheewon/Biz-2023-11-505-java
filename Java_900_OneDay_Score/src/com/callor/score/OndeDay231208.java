@@ -11,7 +11,6 @@ public class OndeDay231208 {
 		}
 		
 		scoreService.printScore();
-
 		
 	}
 }
