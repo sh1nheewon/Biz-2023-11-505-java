@@ -1,4 +1,4 @@
-package com.callor.score;
+package com.callor.score.scores;
 
 import com.callor.score.service.ScoreService;
 
