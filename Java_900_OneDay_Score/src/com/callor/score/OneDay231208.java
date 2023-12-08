@@ -2,7 +2,7 @@ package com.callor.score;
 
 import com.callor.score.service.ScoreService;
 
-public class OndeDay231208 {
+public class OneDay231208 {
 	public static void main(String[] args) {
 		ScoreService scoreService = new ScoreService();
 		
