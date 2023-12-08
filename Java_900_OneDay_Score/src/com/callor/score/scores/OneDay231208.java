@@ -9,6 +9,6 @@ public class OneDay231208 {
 		scoreService.inputScores(51, 100);
 
 		scoreService.printScore();
-
+		
 	}
 }
