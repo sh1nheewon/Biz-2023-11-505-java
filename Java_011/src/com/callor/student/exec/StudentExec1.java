@@ -1,10 +1,11 @@
 package com.callor.student.exec;
 
-import com.callor.student.service.StudentService;
+import com.callor.student.service.StudentServiceV3;
 
 public class StudentExec1 {
 	public static void main(String[] args) {
-		StudentService stService = new StudentService();
-		stService.inputStudents();
+		StudentServiceV3 stService = new StudentServiceV3();
+		//stService.inputStudents();
+		stService.loadStudent();
 	}
 }

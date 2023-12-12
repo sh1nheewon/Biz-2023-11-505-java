@@ -24,15 +24,15 @@ public class StringCB {
 //				scan.nextLine();
 //			}
 //		}
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String line = scan.nextLine();
 //			System.out.println(line);
 			String[] scores = line.split(",");
-			int scoreTotal =0; 
-			for(int index = 1 ; index < scores.length ; index++) {
+			int scoreTotal = 0;
+			for (int index = 1; index < scores.length; index++) {
 				scoreTotal += Integer.valueOf(scores[index]);
+			}
+			System.out.printf("%s 번 총점 : %d\n", scores[0], scoreTotal);
 		}
-			System.out.printf("%s 번 총점 : %d\n",scores[0],scoreTotal );
 	}
-}
 }

@@ -58,9 +58,9 @@ public class StudentService {
 		stdDto.addr = stdAddr;
 		return true;
 		
-		if(stdDto.num == stdNum.equals()) {
+	
 			
-		}
+	
 		
 	}
 
