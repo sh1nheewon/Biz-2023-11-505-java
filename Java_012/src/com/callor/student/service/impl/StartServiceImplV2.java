@@ -1,13 +1,14 @@
 package com.callor.student.service.impl;
 
 import com.callor.student.models.MenuIndex;
+import com.callor.student.service.StudentService;
 import com.callor.student.utils.Line;
 
 public class StartServiceImplV2 extends StartServiceImplV1 {
-	public StartServiceImplV2() {
+	public StartServiceImplV2(StudentService stService) {
 		// scan = new Scanner(System.in);
 		// V1 의 생성자를 호출하여 V1 생성자에 있는 코드를 그대로 실행하겠다
-		super();
+		super(stService);
 		
 		//ImplV1 에서는 St..ServiceImplV1() 을 사용하여 stService 를 초기화 하였다
 		// 하지만 여기에서는 ImplV2 를 사용하고 싶다
@@ -24,7 +25,7 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 		Line.sLine(50);
 		for (MenuIndex menu : MenuIndex.values()) {
 			String item = menu.toString();// 타입이 다를 때 String 으로 맞추기. toString
-			item = item.replace("_", " "); // _ 를 빈칸으로 바꾸어주는 함수. replace
+			item = item.replace("_", " "); // "_" 를 " "(빈칸)으로 바꾸어주는 함수. replace
 			System.out.printf("%d. %s\n", menu.getIndex(), item);
 		}
 		System.out.println("QUIT. 종료");
@@ -74,5 +75,6 @@ public class StartServiceImplV2 extends StartServiceImplV1 {
 			}
 		}
 		System.out.println("업무종료");
-	}
+		
+	} //end startApp
 }
